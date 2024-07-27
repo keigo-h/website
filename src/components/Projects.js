@@ -55,7 +55,7 @@ const Proj = ({title}) => {
         <img src={temp} className="proj-img"/>
       </div>
       <p className="proj-des">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at euismod ipsum. Suspendisse lorem felis, venenatis eu est eget, condimentum placerat eros. In vel eros sed metus dapibus porta. Donec tristique tortor sed metus hendrerit, non molestie magna imperdiet. Suspendisse vel leo magna. Aenean vel interdum sem. In ut risus eleifend, facilisis eros at, gravida ipsum. Quisque pellentesque risus ut urna eleifend, at vestibulum tellus pellentesque. Duis ornare enim sit amet ante finibus tincidunt. 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at euismod ipsum. Suspendisse lorem felis, venenatis eu est eget, condimentum placerat eros. In vel eros sed metus dapibus porta. Donec tristique tortor sed metus hendrerit, non molestie magna imperdiet. Suspendisse vel leo magna. Aenean vel interdum sem. In ut risus eleifend, facilisis eros at, gravida ipsum. Quisque pellentesque risus ut urna eleifend, at vestibulum tellus pellentesque. Duis ornare enim sit amet ante finibus tincidunt wee. 
       </p>
       <p className="proj-lang">Python</p>
       <ProjLink/>
