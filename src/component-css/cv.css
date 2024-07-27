@@ -1,0 +1,74 @@
+.cv{
+    margin-left: 28vw;
+    cursor: pointer;
+}
+
+.cv-sub {
+    margin-left: 28vw;
+}
+
+.cv-text {
+    margin-left: 28vw;
+}
+
+.cv-outer-container {
+    display: flex;
+    align-items: center;
+    height: 95vh;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+.cv-icon {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 30px;
+    animation: fade-in 2s;
+}
+
+.cv-links {
+    position: fixed;
+    margin-left: 85vw;
+    margin-top: 10vh;
+    z-index: 3;
+}
+
+.cv-des {
+    margin-left: 28vw;
+    margin-right: 20vw;
+}
+
+.cv-text {
+    margin-left: 28vw;
+}
+
+.all-exp-wrapper {
+    margin-bottom: 20vh;
+    background-color: white;
+    animation: fade-in 2s;
+    z-index: 1;
+    position: relative;
+}
+
+.ind-exp-wrapper {
+    margin-bottom: 50px;
+}
