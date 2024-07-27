@@ -1,4 +1,4 @@
-import { Link, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Link, Route, Routes, BrowserRouter, HashRouter } from 'react-router-dom';
 import '../component-css/links.css'
 import { Home } from './Home';
 import { About } from './About';
@@ -19,13 +19,13 @@ export const TheLinks = ({curLink}) => {
   
   export const InternalLinks = () => {
     return (
-      <BrowserRouter>
+      <HashRouter>
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='about' element={<About/>}/>
             <Route path='projects' element={<Projects />}/>
             <Route path='cv' element={<Cv />}/>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
   }
