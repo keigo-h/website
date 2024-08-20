@@ -8,10 +8,10 @@
 }
 
 .about-me-text {
-    text-align: justify;
-    text-indent: 30px;
-    margin-left: 25vw;
-    margin-right: 50px;
+    /* text-align: justify; */
+    /* text-indent: 30px; */
+    margin-left: 28vw;
+    /* margin-right: 10px; */
     position: relative;
 }
 
@@ -22,7 +22,7 @@
     width: auto;
     height: auto;
     margin-top: -200px;
-    /* margin-left: -25vw; */
+    margin-left: 10vw;
     margin-right: 25vw;
 }
 
@@ -58,7 +58,7 @@
 
 .icons {
     padding-top: 10px;
-    margin-left: 23.5vw;
+    margin-left: 22vw;
     gap: 10px;
     display: flex;
     justify-content: center;
