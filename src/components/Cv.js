@@ -53,7 +53,11 @@ export const Cv = () => {
           position={"Cybertoaster Intern"}
         />
         <h2 className="cv-sub">education</h2>
-        <Exp title="Brown University" date={"2020-2024"} position={"BS Computer Science, BA Applied Mathematics"} />
+        <Exp
+          title="Brown University"
+          date={"2020-2024"}
+          position={"BS Computer Science, BA Applied Mathematics"}
+        />
       </div>
     </div>
   );
@@ -66,9 +70,7 @@ const Exp = ({ title, date, position }) => {
         <h3 className="cv-text">{title}</h3>
         <span className="cv-date">{date}</span>
       </div>
-      <p className="cv-des">
-        {position}
-      </p>
+      <p className="cv-des">{position}</p>
     </div>
   );
 };

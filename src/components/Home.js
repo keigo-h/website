@@ -1,31 +1,40 @@
 import { TheLinks } from "./Links";
-import '../component-css/home.css'
+import "../component-css/home.css";
 import { useState, useEffect } from "react";
 
-
-export const Home = () => { 
-    return ( 
-      <div>
-        <Delayed delay={10}>
-          <div className="link-fade">
-            <TheLinks curLink='home'/>
-          </div>
-        </Delayed>
-        <div className='home-outer-container'>
-          <div className='home-container'>
+export const Home = () => {
+  return (
+    <div>
+      <Delayed delay={10}>
+        <div className="link-fade">
+          <TheLinks curLink="home" />
+        </div>
+      </Delayed>
+      <div className="home-outer-container">
+        <div className="home-container">
           <Delayed delay={10}>
-            <Title text="keigo hachisuka" delay={50} headerType='h1' identi='name'/>
+            <Title
+              text="keigo hachisuka"
+              delay={50}
+              headerType="h1"
+              identi="name"
+            />
           </Delayed>
           <Delayed delay={1000}>
-              <Title text="software engineer" delay={50} headerType='h2' identi='position'/>
-            </Delayed>
-          </div>
+            <Title
+              text="software engineer"
+              delay={50}
+              headerType="h2"
+              identi="position"
+            />
+          </Delayed>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+};
 
-const Delayed = ({delay, children}) => {
+const Delayed = ({ delay, children }) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -37,25 +46,23 @@ const Delayed = ({delay, children}) => {
   }, [delay]);
 
   return show ? <>{children}</> : null;
-}
+};
 
-const Title = ({text, delay, headerType, identi}) => {
-  const [currentText, setCurrentText] = useState('');
+const Title = ({ text, delay, headerType, identi }) => {
+  const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const Header = `${headerType}`
+  const Header = `${headerType}`;
 
   useEffect(() => {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
+        setCurrentText((prevText) => prevText + text[currentIndex]);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
       }, delay);
-  
+
       return () => clearTimeout(timeout);
     }
   }, [currentIndex, delay, text]);
 
-  return (
-    <Header className={identi}>{currentText}</Header>
-  );
-}
+  return <Header className={identi}>{currentText}</Header>;
+};

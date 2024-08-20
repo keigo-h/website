@@ -40,9 +40,7 @@ export const Projects = () => {
         <div ref={firstProj}>
           <Proj
             title={"this website"}
-            proj_text={
-              "enjoy!"
-            }
+            proj_text={"enjoy!"}
             langs={["HTML", "CSS", "JS", "React"]}
             link={"https://github.com/keigo-h/keigoh_website"}
             type={"code"}
@@ -50,15 +48,15 @@ export const Projects = () => {
           />
         </div>
         <Proj
-            title={"Image to Text Translation"}
-            proj_text={
-              "CNN, RNN, CTC model which extracts text from an image with the goal of translation."
-            }
-            langs={["Python", "Keras"]}
-            link={"https://github.com/keigo-h/CV_Final"}
-            type={"code"}
-            date={"April 2024"}
-          />
+          title={"Image to Text Translation"}
+          proj_text={
+            "CNN, RNN, CTC model which extracts text from an image with the goal of translation."
+          }
+          langs={["Python", "Keras"]}
+          link={"https://github.com/keigo-h/CV_Final"}
+          type={"code"}
+          date={"April 2024"}
+        />
         <Proj
           title={"IP/TCP"}
           proj_text={
@@ -95,11 +93,13 @@ export const Projects = () => {
             "Designed and developed software to match students with potential study partners, managing backend responsibilities with a partner matching algorithm in Java and data storage in MongoDB. Adapted data for smooth integration into the frontend and database, minimizing the need for additional data manipulation."
           }
           langs={["Java", "MongoDB"]}
-          link={"https://github.com/keigo-h/StudyBuddies/tree/master/StudyBuddies"}
+          link={
+            "https://github.com/keigo-h/StudyBuddies/tree/master/StudyBuddies"
+          }
           type={"code"}
           date={"May 2022"}
         />
-        <Proj 
+        <Proj
           title={"F1 betting website"}
           proj_text={"it sucks. but it's my first project"}
           langs={["HTML", "CSS", "JS", "React", "SQL"]}
@@ -107,19 +107,6 @@ export const Projects = () => {
           date={"December 2020"}
         />
       </div>
-    </div>
-  );
-};
-
-const Langs = ({ lang_list }) => {
-  return (
-    <div className="langs-container">
-      {lang_list.map((word, index) => (
-        <span key={index}>
-          {word}
-          {index < lang_list.length - 1 && ","}{" "}
-        </span>
-      ))}
     </div>
   );
 };
@@ -134,6 +121,19 @@ const Proj = ({ title, proj_text, langs, link, type, date }) => {
       <p className="proj-des">{proj_text}</p>
       <Langs lang_list={langs} />
       <ProjLink link={link} type={type} />
+    </div>
+  );
+};
+
+const Langs = ({ lang_list }) => {
+  return (
+    <div className="langs-container">
+      {lang_list.map((word, index) => (
+        <span key={index}>
+          {word}
+          {index < lang_list.length - 1 && ","}{" "}
+        </span>
+      ))}
     </div>
   );
 };

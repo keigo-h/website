@@ -1,44 +1,44 @@
 .home-outer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .home-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
-    position: absolute;
-    margin-top: 1vh;
+  position: absolute;
+  margin-top: 1vh;
 }
 
 .position {
-    position: absolute;
-    margin-top: 15vh;
+  position: absolute;
+  margin-top: 15vh;
 }
 
 .title {
-    margin: 0.5em;
+  margin: 0.5em;
 }
 
 .link-fade {
-    position: fixed;
-    margin-left: 85vw;
-    margin-top: 10vh;
-    animation: fade-in 5s;
+  position: fixed;
+  margin-left: 85vw;
+  margin-top: 10vh;
+  animation: fade-in 5s;
 }
-  
+
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 100;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
