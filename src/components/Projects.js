@@ -42,7 +42,7 @@ export const Projects = () => {
             title={"this website"}
             proj_text={"enjoy!"}
             langs={["HTML", "CSS", "JS", "React"]}
-            link={"https://github.com/keigo-h/keigoh_website"}
+            link={"https://github.com/keigo-h/website"}
             type={"code"}
             date={"August 2024"}
           />
