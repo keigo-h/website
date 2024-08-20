@@ -68,6 +68,8 @@
 .proj-des {
     margin-left: 28vw;
     margin-right: 20vw;
+    margin-top: 25px;
+    text-align: justify;
 }
 
 .proj-lang {
@@ -98,3 +100,24 @@
   .ind-proj-wrapper {
     margin-bottom: 100px;
   }
+
+  .langs-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; /* Adjust spacing between words as needed */
+    margin-left: 28vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .proj-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20vw;
+    margin-bottom: 0;
+}
+
+.proj-date {
+    text-align: right;   
+}
