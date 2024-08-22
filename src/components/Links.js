@@ -8,26 +8,34 @@ import { Cv } from "./Cv";
 export const TheLinks = ({ curLink }) => {
   return (
     <div className="links-container">
-      {curLink === "home" ? null : (
-        <Link className="link" to={"/"}>
-          home
-        </Link>
-      )}
-      {curLink === "about" ? null : (
-        <Link className="link" to={"../about"}>
-          about
-        </Link>
-      )}
-      {curLink === "proj" ? null : (
-        <Link className="link" to={"../projects"}>
-          projects
-        </Link>
-      )}
-      {curLink === "cv" ? null : (
-        <Link className="link" to={"../cv"}>
-          cv
-        </Link>
-      )}
+      <Link
+        className="link"
+        style={curLink === "home" ? { pointerEvents: "none" } : null}
+        to={"/"}
+      >
+        home
+      </Link>
+      <Link
+        className="link"
+        style={curLink === "about" ? { pointerEvents: "none" } : null}
+        to={"../about"}
+      >
+        about
+      </Link>
+      <Link
+        className="link"
+        style={curLink === "proj" ? { pointerEvents: "none" } : null}
+        to={"../projects"}
+      >
+        projects
+      </Link>
+      <Link
+        className="link"
+        style={curLink === "cv" ? { pointerEvents: "none" } : null}
+        to={"../cv"}
+      >
+        cv
+      </Link>
     </div>
   );
 };
